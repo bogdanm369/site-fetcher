@@ -1,4 +1,4 @@
-Utility application used to detect when a site ( by CSS selectors ) has changed.
+Utility application used to detect ( with CSS selectors ) when a site has changed.
 
 Simply follow the example config;
 
