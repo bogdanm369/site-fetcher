@@ -1,0 +1,27 @@
+config:
+  email-templates:
+    siteChangeSubject: 'When a site changes, this is the e-mails subject'
+    healthCheckSubject: 'Health check email subject'
+    healthCheckContent: 'Health check email content'
+  mailNotifications:
+    gmailAccount: 'account-from-which-to-send-emails@gmail.com'
+    appPassword: '1234 5678 9123 4567'
+  healthCheck:
+    rate: 3600 #seconds
+    sendEmailsTo:  ['who-should-be-notified@anymail.com']
+  mainSites: time-check-change #, another-site-name
+  sites:
+    time-check-change:
+      url: https://www.timeanddate.com/
+      selectors: '#clk_hm' #selector to check for changes
+      scanInterval: 120 #seconds
+      #beforeTimeTrigger: '22:45' - sends an email only if the change is before the specified hour
+      writeLogToFile: false #outputs the content change to a timestamped log file
+      sendEmailsTo: ['who-should-be-notified@anymail.com']
+    another-site-name:
+      url: https://www.timeanddate.com/
+      selectors: '#clk_hm' #selector to check for changes
+      scanInterval: 120 #seconds
+      #beforeTimeTrigger: '22:45' - sends an email only if the change is before the specified hour
+      writeLogToFile: false
+      sendEmailsTo: ['who-should-be-notified@anymail.com']

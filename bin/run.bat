@@ -1,0 +1,1 @@
+java -jar sitefetcher-1.0-SNAPSHOT.jar
