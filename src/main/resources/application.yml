@@ -1,8 +1,8 @@
 config:
   email-templates:
     siteChangeSubject: 'When a site changes, this is the e-mails subject'
-    healthCheckSubject: 'Health check email subject'
-    healthCheckContent: 'Health check email content'
+    healthCheckSubject: 'SiteFetcher is running'
+    healthCheckContent: 'SiteFetcher is running'
   mailNotifications:
     gmailAccount: 'account-from-which-to-send-emails@gmail.com'
     appPassword: '1234 5678 9123 4567'
